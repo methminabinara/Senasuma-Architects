@@ -38,3 +38,38 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+senasuma-architects/
+├── .git/ # Git repository
+├── .next/ # Next.js build output
+│ ├── build-manifest.json
+│ ├── cache/
+│ ├── package.json
+│ ├── react-loadable-manifest.json
+│ ├── server/
+│ ├── static/
+│ └── trace
+├── node_modules/ # Dependencies
+├── pages/ # Page components
+│ ├── \_app.tsx # Custom App component
+│ ├── \_document.tsx # Custom Document component
+│ ├── index.tsx # Homepage
+│ └── api/ # API routes
+│ └── hello.ts # API endpoint
+├── public/ # Static assets
+│ ├── favicon.ico
+│ ├── file.svg
+│ ├── globe.svg
+│ ├── next.svg
+│ ├── vercel.svg
+│ └── window.svg
+├── styles/ # Stylesheets
+│ └── globals.css # Global CSS
+├── .gitignore # Git ignore configuration
+├── eslint.config.mjs # ESLint configuration
+├── next-env.d.ts # TypeScript declarations for Next.js
+├── next.config.ts # Next.js configuration
+├── package.json # Project metadata and dependencies
+├── postcss.config.mjs # PostCSS configuration
+├── README.md # Project documentation
+└── tsconfig.json # TypeScript configuration
