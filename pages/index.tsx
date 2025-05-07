@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -35,9 +36,11 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <img
+          <Image
             src="/hero.jpg"
             alt="Our Studio"
+            width={600}
+            height={400}
             className="rounded-lg shadow-lg w-full h-auto object-cover"
           />
         </div>
@@ -50,11 +53,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto items-center grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Project 1 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
-              src="/projects/project1.jpg"
-              alt="Modern Villa"
-              className="w-full h-48 object-cover"
-            />
+          <Image
+            src="/projects/project1.jpg"
+            alt="Modern Villa"
+            width={400}
+            height={300}
+            className="w-full h-48 object-cover"
+          />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Modern Villa
@@ -67,11 +72,13 @@ export default function Home() {
 
           {/* Project 2 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
-              src="/projects/project2.jpg"
-              alt="Urban Office"
-              className="w-full h-48 object-cover"
-            />
+          <Image
+            src="/projects/project2.jpg"
+            alt="Urban Office"
+            width={400}
+            height={300}
+            className="w-full h-48 object-cover"
+          />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Urban Office
@@ -84,11 +91,13 @@ export default function Home() {
 
           {/* Project 3 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
-              src="/projects/project3.jpg"
-              alt="Lake House"
-              className="w-full h-48 object-cover"
-            />
+          <Image
+            src="/projects/project3.jpg"
+            alt="Lake House"
+            width={400}
+            height={300}
+            className="w-full h-48 object-cover"
+          />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Lake House
@@ -110,7 +119,7 @@ export default function Home() {
         </p>
         <div className="space-y-4 text-gray-700">
           <p>
-            <strong>Address:</strong> "Senasuma Architects", Maraggoda, Porawagama, Elpitiya.
+            <strong>Address:</strong> Senasuma Architects, Maraggoda, Porawagama, Elpitiya.
           </p>
           <p>
             <strong>Phone:</strong>{' '}
