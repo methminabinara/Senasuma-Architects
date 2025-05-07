@@ -9,7 +9,7 @@ export default function Home() {
         <title>Senasuma Architects</title>
         <meta name="description" content="Senasuma Architects - Innovative and Sustainable Architecture" />
       </Head>
-      <section id="home" className="relative flex items-center justify-center h-[90vh] bg-gray-100 text-center px-4">
+      <section id="home" className="relative flex items-center justify-center min-h-[90vh] bg-gray-100 text-center px-4">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
             Designing Spaces, Shaping Dreams
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center h-[90vh]">
+      <section id="about" className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center min-h-[90vh]">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             About Us
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="mx-auto px-4 py-16 bg-gray-100 h-[90vh]">
+      <section id="projects" className="mx-auto px-4 py-16 bg-gray-100 min-h-[90vh]">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           Our Projects
         </h2>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="max-w-4xl mx-auto px-4 py-16 text-center h-[90vh]">
+      <section id="contact" className="max-w-4xl mx-auto px-4 py-16 text-center min-h-[90vh]">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
           Contact Us
         </h2>
