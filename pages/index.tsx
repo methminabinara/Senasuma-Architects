@@ -64,69 +64,93 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="mx-auto px-4 py-16 bg-gray-100 min-h-[90vh]">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-          Our Projects
-        </h2>
-        <div className="max-w-6xl mx-auto items-center grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Project 1 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <Image
-            src="/images/project1.jpg"
-            alt="Modern Villa"
-            width={400}
-            height={300}
-            className="w-full h-48 object-cover"
-          />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Modern Villa
-              </h3>
-              <p className="text-gray-700">
-                A luxurious modern villa blending nature and architecture.
-              </p>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <Image
-            src="/images/project2.jpg"
-            alt="Urban Office"
-            width={400}
-            height={300}
-            className="w-full h-48 object-cover"
-          />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Urban Office
-              </h3>
-              <p className="text-gray-700">
-                A sleek commercial space designed for productivity and comfort.
-              </p>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <Image
-            src="/images/project3.jpg"
-            alt="Lake House"
-            width={400}
-            height={300}
-            className="w-full h-48 object-cover"
-          />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Lake House
-              </h3>
-              <p className="text-gray-700">
-                A serene lakeside retreat that embraces minimalism and light.
-              </p>
-            </div>
-          </div>
+      <section id="projects" className="mx-auto px-4 py-16 bg-gradient-to-b from-gray-50 to-gray-100 min-h-[90vh]">
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+    <span className="inline-block relative">
+      Our Projects
+      <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-gray-300 to-gray-400 rounded-full"></div>
+    </span>
+  </h2>
+  <div className="max-w-6xl mx-auto items-center grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {/* Project 1 */}
+    <div className="bg-white rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl shadow-lg group perspective-800">
+      <div className="relative">
+        <Image
+          src="/images/project1.jpg"
+          alt="Modern Villa"
+          width={400}
+          height={300}
+          className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
+        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+      </div>
+      <div className="p-6 relative">
+        <div className="absolute -top-3 left-4 right-4 h-2 bg-gradient-to-r from-gray-100 to-white blur-md"></div>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          Modern Villa
+        </h3>
+        <p className="text-gray-700 mb-4">
+          A luxurious modern villa blending nature and architecture.
+        </p>
+        <div className="flex justify-end">
+          <span className="text-sm font-medium text-gray-800 px-3 py-1 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors cursor-pointer">View Details</span>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* Project 2 */}
+    <div className="bg-white rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl shadow-lg group perspective-800">
+      <div className="relative">
+        <Image
+          src="/images/project2.jpg"
+          alt="Urban Office"
+          width={400}
+          height={300}
+          className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
+        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+      </div>
+      <div className="p-6 relative">
+        <div className="absolute -top-3 left-4 right-4 h-2 bg-gradient-to-r from-gray-100 to-white blur-md"></div>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          Urban Office
+        </h3>
+        <p className="text-gray-700 mb-4">
+          A sleek commercial space designed for productivity and comfort.
+        </p>
+        <div className="flex justify-end">
+          <span className="text-sm font-medium text-gray-800 px-3 py-1 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors cursor-pointer">View Details</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Project 3 */}
+    <div className="bg-white rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl shadow-lg group perspective-800">
+      <div className="relative">
+        <Image
+          src="/images/project3.jpg"
+          alt="Lake House"
+          width={400}
+          height={300}
+          className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
+        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+      </div>
+      <div className="p-6 relative">
+        <div className="absolute -top-3 left-4 right-4 h-2 bg-gradient-to-r from-gray-100 to-white blur-md"></div>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">
+          Lake House
+        </h3>
+        <p className="text-gray-700 mb-4">
+          A serene lakeside retreat that embraces minimalism and light.
+        </p>
+        <div className="flex justify-end">
+          <span className="text-sm font-medium text-gray-800 px-3 py-1 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors cursor-pointer">View Details</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="contact" className="max-w-4xl mx-auto px-4 py-16 text-center min-h-[90vh]">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
