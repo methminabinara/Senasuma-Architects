@@ -52,15 +52,15 @@ export default function Home() {
           />
         </div>
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            About Us
-          </h2>
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            At Senasuma Architects, we believe architecture is not just about buildings, but about shaping environments that inspire and endure. With years of experience and a passion for design excellence, we deliver projects that blend creativity, functionality, and sustainability.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            From residential to commercial spaces, our dedicated team works closely with clients to bring their vision to life while respecting the unique context of each site.
-          </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          Who We Are
+        </h2>
+        <p className="text-lg text-gray-700 mb-4 text-justify">
+          <strong>Senasuma Architects</strong> proudly continues the legacy of the <em>Epa family</em>. Beginning with the visionary <strong>K. Abraham Epa</strong>, the practice is now led by <strong>K. A. Bandula Epa</strong>, a certified architect with over <strong>30 years of experience</strong> in designing inspiring spaces.
+        </p>
+        <p className="text-lg text-gray-700">
+          We blend <strong>modern architectural styles</strong> with timeless <strong>traditional Sri Lankan design elements</strong>, ensuring every project reflects innovation, heritage, and functionality.
+        </p>
         </div>
       </section>
 
