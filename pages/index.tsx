@@ -9,17 +9,29 @@ export default function Home() {
         <title>Senasuma Architects</title>
         <meta name="description" content="Senasuma Architects - Innovative and Sustainable Architecture" />
       </Head>
-      <section id="home" className="relative flex items-center justify-center min-h-[90vh] bg-gray-100 text-center px-4">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            Designing Spaces, Shaping Dreams
-          </h1>
-          <p className="text-gray-700 text-lg md:text-xl mb-6">
-            We craft innovative and sustainable architectural solutions.
-          </p>
-          <Link href="#projects" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full text-lg hover:bg-gray-700 transition">
-            View Our Work
-          </Link>
+      <section id="home" className="relative flex items-center justify-center min-h-[90vh] bg-gray-100 text-center px-4 py-12 mt-10">
+        <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div className="order-2 md:order-1 text-left md:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+              Designing Spaces, Shaping Dreams
+            </h1>
+            <p className="text-gray-700 text-lg md:text-xl mb-6">
+              We craft innovative and sustainable architectural solutions.
+            </p>
+            <Link href="#projects" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full text-lg hover:bg-gray-700 transition">
+              View Our Work
+            </Link>
+          </div>
+          <div className="order-1 md:order-2 flex justify-center md:justify-end">
+            <Image
+              src="/images/img2.png"
+              alt="Modern Architecture Design"
+              width={600}
+              height={450}
+              className="rounded-lg shadow-xl object-cover h-auto max-h-[450px]"
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -54,7 +66,7 @@ export default function Home() {
           {/* Project 1 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <Image
-            src="/projects/project1.jpg"
+            src="/images/project1.jpg"
             alt="Modern Villa"
             width={400}
             height={300}
@@ -73,7 +85,7 @@ export default function Home() {
           {/* Project 2 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <Image
-            src="/projects/project2.jpg"
+            src="/images/project2.jpg"
             alt="Urban Office"
             width={400}
             height={300}
@@ -92,7 +104,7 @@ export default function Home() {
           {/* Project 3 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <Image
-            src="/projects/project3.jpg"
+            src="/images/project3.jpg"
             alt="Lake House"
             width={400}
             height={300}
