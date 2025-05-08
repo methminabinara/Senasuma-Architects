@@ -50,7 +50,7 @@ export default function Home() {
               We craft innovative and sustainable architectural solutions that transform ideas into reality.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="#projects" className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl hover:translate-y-[-2px]">
+              <Link href="#projects" className="inline-flex items-center bg-[#1B3044] text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl hover:translate-y-[-2px]">
                 View Our Work <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link href="#contact" className="inline-flex items-center bg-white text-gray-900 border-2 border-gray-900 px-8 py-3 rounded-full text-lg hover:bg-gray-50 transition-all">
