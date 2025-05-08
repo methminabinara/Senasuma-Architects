@@ -9,33 +9,48 @@ export default function Home() {
         <title>Senasuma Architects</title>
         <meta name="description" content="Senasuma Architects - Innovative and Sustainable Architecture" />
       </Head>
-      <section id="home" className="relative flex items-center justify-center min-h-[90vh] bg-gray-100 text-center px-4 py-12 mt-10">
-        <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <section id="home" className="relative flex items-center justify-center min-h-[90vh] bg-gradient-to-b from-gray-50 to-gray-100 text-center px-4 py-12 mt-10">
+        <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 text-left md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-              Designing Spaces, Shaping Dreams
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+              Designing <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Spaces</span>, Shaping Dreams
             </h1>
-            <p className="text-gray-700 text-lg md:text-xl mb-6">
-              We craft innovative and sustainable architectural solutions.
+            <p className="text-gray-700 text-lg md:text-xl mb-8 max-w-xl">
+              We craft innovative and sustainable architectural solutions that transform ideas into reality.
             </p>
-            <Link href="#projects" className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full text-lg hover:bg-gray-700 transition">
+            <Link href="#projects" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl hover:translate-y-[-2px]">
               View Our Work
             </Link>
           </div>
-          <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            <Image
-              src="/images/img2.png"
-              alt="Modern Architecture Design"
-              width={600}
-              height={450}
-              className="rounded-lg shadow-xl object-cover h-auto max-h-[450px]"
-              priority
-            />
+          <div className="order-1 md:order-2 flex justify-center md:justify-end perspective-[1200px]">
+            <div className="relative transform transition-all duration-500 hover:scale-[1.03] hover:-rotate-2 hover:translate-y-[-5px]">
+              <Image
+                src="/images/img2.png"
+                alt="Modern Architecture Design"
+                width={600}
+                height={450}
+                className="rounded-lg object-cover h-auto max-h-[450px] z-10 relative shadow-xl"
+                priority
+              />
+              <div className="absolute -bottom-4 -right-4 w-full h-full bg-gray-900/10 rounded-lg -z-10 blur-[2px]"></div>
+              <div className="absolute -bottom-7 -right-7 w-full h-full bg-gray-900/5 rounded-lg -z-20 blur-[4px]"></div>
+              <div className="absolute top-0 left-0 w-full h-full rounded-lg shadow-inner pointer-events-none z-20"></div>
+            </div>
           </div>
         </div>
+        <div className="absolute -bottom-1 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <section id="about" className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center min-h-[90vh]">
+      <section id="about" className="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center min-h-[90vh]"> 
+        <div>
+          <Image
+            src="/hero.jpg"
+            alt="Our Studio"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg w-full h-auto object-cover"
+          />
+        </div>
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             About Us
@@ -46,15 +61,6 @@ export default function Home() {
           <p className="text-gray-700 text-lg leading-relaxed">
             From residential to commercial spaces, our dedicated team works closely with clients to bring their vision to life while respecting the unique context of each site.
           </p>
-        </div>
-        <div>
-          <Image
-            src="/hero.jpg"
-            alt="Our Studio"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg w-full h-auto object-cover"
-          />
         </div>
       </section>
 
