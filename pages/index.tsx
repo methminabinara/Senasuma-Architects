@@ -270,11 +270,11 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-2 gap-2 text-gray-700">
                 <p>Monday - Friday:</p>
-                <p>9:00 AM - 5:00 PM</p>
+                <p>2:30 PM - 9:00 PM</p>
                 <p>Saturday:</p>
-                <p>10:00 AM - 2:00 PM</p>
+                <p>8:00 AM - 5:00 PM</p>
                 <p>Sunday:</p>
-                <p>Closed</p>
+                <p>8:00 AM - 5:00 PM</p>
               </div>
             </div>
           </div>
