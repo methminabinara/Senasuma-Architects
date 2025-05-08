@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Send, Mail, MessageSquare, User, Phone, MapPin, Building, ArrowRight, ChevronDown } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
+import { useEffect} from 'react';
 
 export default function Home() {
   const [form, setForm] = useState({
@@ -23,6 +25,31 @@ export default function Home() {
       form.subject
     )}&body=${encodeURIComponent(`From: ${form.email}\n\n${form.message}`)}`;
     window.location.href = mailtoLink;
+  };
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show button when user scrolls down 300px
+      setShowScrollTop(window.scrollY > 300);
+    };
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Function to scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -358,6 +385,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-6 right-6 p-3 rounded-full bg-gray-900 text-white shadow-lg z-50 transition-all duration-300 ${
+          showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+        }`}
+        aria-label="Scroll to top"
+      >
+        <ChevronUp className="h-6 w-6" />
+      </button>
     </>
   );
 }
