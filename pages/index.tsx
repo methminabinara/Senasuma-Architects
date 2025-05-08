@@ -225,7 +225,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1 rounded-full bg-gray-900/10 text-gray-800 font-medium text-sm mb-4">GET IN TOUCH</span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Contact Us</h2>
             <p className="text-lg text-gray-700 mb-8">
-              We'd love to discuss your next project. Reach out to us today for a consultation!
+              We&apos;d love to discuss your next project. Reach out to us today for a consultation!
             </p>
             
             <div className="space-y-6 mb-8">
