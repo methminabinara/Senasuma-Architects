@@ -4,8 +4,8 @@ import { Menu, X } from 'lucide-react';
 import { div } from 'framer-motion/client';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [_menuOpen, _setMenuOpen] = useState(false);
+  const [_scrolled, setScrolled] = useState(false);
   
   // Handle scroll effect
   useEffect(() => {
