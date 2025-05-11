@@ -44,7 +44,7 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   // Using isScrolling in scrollToSection and scrollToTop functions
-  const [isScrolling, setIsScrolling] = useState(false);
+  const [_isScrolling, setIsScrolling] = useState(false);
 
   // Parallax effect states
   const [offsetY, setOffsetY] = useState(0);
