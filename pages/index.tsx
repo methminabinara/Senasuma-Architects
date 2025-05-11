@@ -1,7 +1,6 @@
 'use client';
 
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import {
@@ -17,9 +16,6 @@ import {
   ChevronUp,
   Menu,
   X,
-  Instagram,
-  Facebook,
-  Linkedin,
   ExternalLink,
   Coffee
 } from 'lucide-react';
