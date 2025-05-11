@@ -668,21 +668,6 @@ export default function Home() {
                   <p>8:00 AM - 5:00 PM</p>
                 </div>
               </div>
-              
-              {/* <div className="mt-12">
-                <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a href="#" className="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-amber-500 hover:text-white transition-colors">
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-amber-500 hover:text-white transition-colors">
-                    <Facebook className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-amber-500 hover:text-white transition-colors">
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                </div>
-              </div> */}
             </div>
             
             <div>
@@ -777,17 +762,6 @@ export default function Home() {
                 SENASUMA ARCHITECTS<span className="text-amber-500">.</span>
               </h3>
               <p className="text-gray-300 mb-6">Crafting innovative architectural solutions that transform ideas into reality since 1980.</p>
-              {/* <div className="flex space-x-4">
-                <a href="#" className="bg-gray-800 p-2 rounded-full text-gray-300 hover:bg-amber-500 hover:text-white transition-colors">
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a href="#" className="bg-gray-800 p-2 rounded-full text-gray-300 hover:bg-amber-500 hover:text-white transition-colors">
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a href="#" className="bg-gray-800 p-2 rounded-full text-gray-300 hover:bg-amber-500 hover:text-white transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </div> */}
             </div>
             
             <div>
