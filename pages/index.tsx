@@ -43,7 +43,8 @@ export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  // Using isScrolling in scrollToSection and scrollToTop functions
+  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_isScrolling, setIsScrolling] = useState(false);
 
   // Parallax effect states
